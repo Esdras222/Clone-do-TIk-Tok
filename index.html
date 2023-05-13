@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TikTok Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="app__videos">
+       <div class="video">
+        <video class="video__player" src="ceará123.mp4">
+
+        </video>
+
+        <div class="videoSidebar">
+            <div class="videoSidebar__button">
+                <span class="material-icons">favorite_border
+
+                </span>
+                <p>30</p>
+                </div>
+
+                <div class="videoSidebar__button">
+                    <span class="material-icons">message</span>
+                    <p>50</p>
+                </div>
+
+                <div class="videoSidebar__button">
+                    <span class="material-icons">share</span>
+                    <p>100</p>
+                    </div>
+                </div>
+
+              <div class="videoFooter">
+                <div class="videoFooter__text">
+                    <h3>tem ceará essa noite</h3>
+                    <p class="videoFooter__description">o campeão do nordeste</p>
+
+                    <div class="videFooter__ticket">
+                        <span class="material-iconsvideoFooter__icon">music_note</span>
+                        <marquee>tem cabaré essa noite paródia</marquee>
+                        </div>
+                    </div>
+
+                    <img src="https://static.thenounproject.com/png/934821-200.png"
+                    alt=""
+                    class="videoFooter__record"
+                  />
+                  </div>
+                </div>
+
+                <div class="video">
+                    <video class="video__player" src="zeca123.mp4">
+
+                    </video>
+
+                    <div class="videoSidebar">
+                        <div class="videoSidebar__button">
+                            <span class="material-icons">favorite_border
+
+                            </span>
+
+                            <p>28</p>
+                        </div>
+
+                        <div class="videoSidebar__button">
+                            <span class="material-icons">message</span>
+                            <p>94</p>
+                        </div>
+
+                        <div class="videoSidebar__button">
+                            <span class="material-icons">share</span>
+                            <p>78</p>
+                            </div>
+                        </div>
+
+                        <div class="videoFooter">
+                            <div class="videoFooter__text">
+                                <h3>zequinha meu filhoooo</h3>
+                                <p class="videoFooter__description">baratinho pra mim kkkkkkkkk</p>
+
+                                <div class="videoFooter__ticket">
+                                    <span class="material-iconsvideoFooter__icon">music_note</span>
+                                    <marquee>trilha sonora...</marquee>
+                                    </div>
+                                </div>
+
+                                <img src="https://static.thenounproject.com/png/934821-200.png"
+                                alt=""
+                                class="videoFooter__record"
+                              />
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>  
+            </div>
+        </div>
+       </div> 
+    </div>
+    <script>
+        const videos = document.querySelectorAll('video');
+
+        for (const video of videos) {
+            video.addEventListener('click', function() {
+                console.log('clicked');
+                if (video.paused) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        }
+    </script>
+  </body>
